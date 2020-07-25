@@ -1,7 +1,7 @@
 ## React Comment Component
 
 
-A comment cpmponent app build on ReactJs
+A comment component app build on ReactJs
 
 ### Installation
 
