@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Comment /> should render comment correctly with given comment 1`] = `ShallowWrapper {}`;

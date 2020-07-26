@@ -1,0 +1,19 @@
+.App {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:white;
+  height: 100vh;
+}
+.App_Header {
+  background-color:#c0c0c0;
+  width: 100vw;
+  height: 90px;
+  text-align: center;
+}
+.App_CommentBoxForm {
+  margin-bottom: 20px;
+}
+.App_CommentList {
+  margin-bottom: 50px;
+}

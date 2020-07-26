@@ -1,0 +1,86 @@
+.Comment {
+  display:flex;
+  background-color:white;
+  width:51vw;
+  cursor: default
+}
+.Comment_Details {
+  display:flex;
+  margin-bottom:10px;
+}
+img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.Author {
+  width: 74px;
+  height: 20px;
+  border-radius: 14px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  box-sizing: content-box;
+  line-height: 17px;
+  margin-right: 7px;
+  margin-top: 2px;
+  font-size: 14px;
+}
+.Name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.Time {
+  color:lightgrey;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.Dot {
+  margin-right: 5px;
+}
+.Message {
+  margin-bottom:10px;
+  min-height: 63px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li:hover {
+ cursor: pointer;
+}
+li span {
+  display: block;
+  color:lightgrey;
+  text-align: center;
+  padding-right: 15px;
+  text-decoration: none;
+  font-size: 12px;
+}
+.Arrow {
+  border-bottom: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.Up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+.Down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+.Chevron_Hovered {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}

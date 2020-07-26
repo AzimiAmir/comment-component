@@ -1,0 +1,30 @@
+.App_Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#cfcfc4;
+  width:100vh;
+  padding:30px;
+  min-height:290px;
+}
+.App_Form_Text {
+  width: 30%;
+  margin-bottom: 10px;
+}
+.Form_Button {
+  padding:5px;
+}
+.Alert {
+  padding: 10px 40px 10px 40px ;
+  background-color: #ffeb3b;
+  color: black;
+  margin-top:20px;
+}
+input {
+  width:100%;
+  height:30px;
+}
+textarea {
+  width: 100%;
+  height:130px;
+}
