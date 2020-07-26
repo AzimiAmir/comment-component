@@ -1,10 +1,10 @@
-import React from 'react'
-import CommentList from './CommentList'
-import Comment from './Comment'
-import {configure, shallow} from 'enzyme'
-import adapter from 'enzyme-adapter-react-16'
+import React from 'react';
+import CommentList from './CommentList';
+import Comment from './Comment';
+import {configure, shallow} from 'enzyme';
+import adapter from 'enzyme-adapter-react-16';
 
-configure({adapter: new adapter()})
+configure({adapter: new adapter()});
 
 
 describe('<CommentList/>', () => {
@@ -20,8 +20,8 @@ describe('<CommentList/>', () => {
         message: `So what the Canadian ... `,
         time: "1 MINUTE AGO",
       }
-    ]
-    const wrapper = shallow(<CommentList comments={comments}/>)
-    expect(wrapper.find(Comment)).toHaveLength(2)
+    ];
+    const wrapper = shallow(<CommentList comments={comments}/>);
+    expect(wrapper.find(Comment)).toHaveLength(2);
   })
-})
+});

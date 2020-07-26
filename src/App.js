@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import CommentBoxForm from './components/CommentBoxForm'
-import CommentList from './components/CommentList'
-import classes from './App.module.css'
+import CommentBoxForm from './components/CommentBoxForm';
+import CommentList from './components/CommentList';
+import classes from './App.module.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.addComment = this.addComment.bind(this);
-
     this.state = {
       comments: [
           {
@@ -18,11 +17,13 @@ class App extends Component {
         ]
     };
   }
+
   addComment(comment) {
     this.setState({
       comments: [comment, ...this.state.comments]
     });
   }
+
   render() {
     return (
       <div className={classes.App}>
@@ -40,6 +41,6 @@ class App extends Component {
       </div>
     );
   }
-}
+};
 
 export default App;

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import moment from 'moment'
-import classes from './CommentBoxForm.module.css'
+import moment from 'moment';
+import classes from './CommentBoxForm.module.css';
 
-export default class CommentBoxForm extends Component {
+class CommentBoxForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,6 +14,7 @@ export default class CommentBoxForm extends Component {
     this.fieldChangeHandler = this.fieldChangeHandler.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
+
   fieldChangeHandler = event => {
     const { value, name } = event.target;
     this.setState({
@@ -30,7 +31,7 @@ export default class CommentBoxForm extends Component {
       this.setState({ error: "All fields are required!" });
       return;
     }
-    this.setState({ error: ""});
+    this.setState({ error: "" });
     let { comment } = this.state;
     comment.time = moment().startOf('minute').fromNow();
     this.props.addComment(comment);
@@ -78,3 +79,5 @@ export default class CommentBoxForm extends Component {
     );
   }
 }
+
+export default CommentBoxForm;

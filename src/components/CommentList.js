@@ -1,9 +1,8 @@
 import React from "react";
 import Comment from "./Comment";
-import classes from './CommentList.module.css'
+import classes from './CommentList.module.css';
 
-export default function CommentList(props) {
-
+function CommentList(props) {
   return (
     <div>
       {props.comments.map((comment, index) => (
@@ -12,7 +11,9 @@ export default function CommentList(props) {
           <Comment comment={comment} />
         </div>
       </div>
-      ))}
+      ))};
     </div>
   );
 }
+
+export default CommentList;

@@ -2,7 +2,7 @@
   display:flex;
   background-color:white;
   width:51vw;
-  cursor: default
+  cursor: default;
 }
 .Comment_Details {
   display:flex;

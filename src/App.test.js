@@ -1,11 +1,10 @@
-import React from 'react'
-import CommentList from './components/CommentList'
-import {configure, shallow} from 'enzyme'
-import adapter from 'enzyme-adapter-react-16'
+import React from 'react';
+import CommentList from './components/CommentList';
+import {configure, shallow} from 'enzyme';
+import adapter from 'enzyme-adapter-react-16';
 import App from './App';
 
-configure({adapter: new adapter()})
-
+configure({adapter: new adapter()});
 
 describe('<App/>', () => {
   const comments = [
@@ -16,9 +15,9 @@ describe('<App/>', () => {
     }
   ]
   it('Should check if the App component contains CommentList component', () => {
-    const wrapper = shallow(<App />)
-    expect(wrapper.contains(<CommentList comments={comments}/>)).toEqual(true)
+    const wrapper = shallow(<App />);
+    expect(wrapper.contains(<CommentList comments={comments}/>)).toEqual(true);
   })
-})
+});
 
 
