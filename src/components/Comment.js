@@ -62,7 +62,7 @@ const Comment = (props) => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default Comment

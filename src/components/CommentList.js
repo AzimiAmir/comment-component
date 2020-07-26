@@ -11,9 +11,9 @@ function CommentList(props) {
           <Comment comment={comment} />
         </div>
       </div>
-      ))};
+      ))}
     </div>
-  );
+  )
 }
 
 export default CommentList;

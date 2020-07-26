@@ -39,7 +39,7 @@ class App extends Component {
           <CommentList comments={this.state.comments}/>
         </div>
       </div>
-    );
+    )
   }
 };
 

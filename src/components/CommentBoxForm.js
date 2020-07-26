@@ -33,7 +33,7 @@ class CommentBoxForm extends Component {
     }
     this.setState({ error: "" });
     let { comment } = this.state;
-    comment.time = moment().startOf('minute').fromNow();
+    comment.time = moment().startOf('minute').fromNow().toUpperCase();
     this.props.addComment(comment);
     this.setState({
       comment: { ...comment, message: "" }
@@ -76,7 +76,7 @@ class CommentBoxForm extends Component {
           {this.alertError()}
         </form>
       </React.Fragment>
-    );
+    )
   }
 }
 
